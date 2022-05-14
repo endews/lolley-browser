@@ -52,7 +52,6 @@ namespace Lolley
                             }
                         }
                     };
-
                 };
                 socket.OnClose = () => Console.WriteLine("disconnected");
                 socket.OnMessage = async message =>
