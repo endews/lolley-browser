@@ -16,8 +16,6 @@ namespace Lolley
 {
     public partial class BrowserForm : Form
     {
-
-
         public BrowserForm()
         {
             InitializeComponent();
@@ -43,7 +41,6 @@ namespace Lolley
             {
                 socket.OnOpen = () => {
                     Console.WriteLine("connected");
-
                     browser.LoadingStateChanged += (sender2, args) =>
                     {
                         if(currentAdress != browser.Address)
